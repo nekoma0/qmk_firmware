@@ -1,10 +1,10 @@
-# NekoMaO's Keychron Q3 keymap v1.0.0 (STILL WIP)
+# NekoMaO's Keychron Q3 keymap v1.0.0
 Big thanks elpekeñin#2234 for staying around, teaching me and helping me in making this.
 
 Thanks to QMK discord server people too! awesome peeps like filterpaper#2878 , waffle#0087, and ANDY#1129
 
 ## Difference between stock (Note : VIA is enabled)
-- Added 1 additional FN layer which can be accessible by `MO(4)`.
+- Added 1 additional FN layer which can be accessible by `MO(4)`. (`XTD_FN` Layer = `MO(4)`)
   - By default `RGUI`/`ROPT` has been replaced with `MO(4)`, please modify if it doesn't fit your use case. 
 - Enabling `CapsLock` will turn Alpha, Number, and Symbols LED red.
   - Capslock Indicator behavior is only on base layer.(`MAC_BASE` and `WIN_BASE`)
@@ -13,7 +13,20 @@ Thanks to QMK discord server people too! awesome peeps like filterpaper#2878 , w
   - `XTD_FN` assigned keys LED is `CYAN`.
 - GUI/Option Lock toggle key combination is `FN+LGUI` in windows or `FN+LOPT` in mac.
 - GUI LED indicator would glow `GOLD` color when lock is enabled.
-- Mouse control function.(sorry, i need time to work on readme to show the mouse controls)
+- FN Layer `XTD_FN` F1~12 replaced with F13~f24
+- FN Layer `WIN_FN` has mouse controls.(Windows)
+  - `FN+UP` Mouse cursor up
+  - `FN+DOWN` Mouse cursor down
+  - `FN+LEFT` Mouse cursor left
+  - `FN+RIGHT` Mouse cursor right
+  - `FN+INS` Mouse Left click
+  - `FN+HOME` Mouse right click
+  - `FN+DEL` Mouse back button
+  - `FN+END` Mouse forward button
+  - `FN` + `Knob` counter clockwise send numpad `-` and clockwise sends numpad `+`
+    - it serves as a `Zoom In/Out` function. Hold `FN+RIGHT CTRL` + Knob movement, if not working.[^1]
+
+[^1]: i've decided to not use `C(KC_PMNS)` and `C(KC_PPLS)`, just incase we encounter any applications that doesn't use modifier `CTRL` + Hotkey for zoom function.
 
 ### 30-December-2022 v1.0.0
 - Initial release
