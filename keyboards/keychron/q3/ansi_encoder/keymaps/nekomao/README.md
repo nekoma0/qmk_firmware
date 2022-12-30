@@ -1,4 +1,4 @@
-# NekoMaO's Keychron Q3 keymap v1.0.0
+# NekoMaO's Keychron Q3 keymap v1.0.0 (STILL WIP)
 Big thanks elpekeñin#2234 for staying around, teaching me and helping me in making this.
 
 Thanks to QMK discord server people too! awesome peeps like filterpaper#2878 , waffle#0087, and ANDY#1129
