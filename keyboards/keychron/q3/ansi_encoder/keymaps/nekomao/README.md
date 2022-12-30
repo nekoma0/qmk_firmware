@@ -24,7 +24,7 @@ Thanks to QMK discord server people too! awesome peeps like filterpaper#2878 , w
   - `FN+DEL` Mouse back button
   - `FN+END` Mouse forward button
   - `FN` + `Knob` counter clockwise send numpad `-` and clockwise sends numpad `+`
-    - it serves as a `Zoom In/Out` function. Hold `FN+RIGHT CTRL` + Knob movement, if not working.[^3]
+    - it serves as a `Zoom In/Out` function. Hold `FN+RIGHT CTRL` + Knob movement, if zoom doesn't seem to work.[^3]
 
 [^1]: dont be alarmed when you see raw hexcode `0x700B` in VIA, it is GUI_TOG function.
 [^2]: if you wished to change the hotkey location in VIA, do take note that VIA dont have a dedicated button/unfunction for `GUI_TOG`, you will need to use `ANY` in `SPECIAL` and input hexcode `0x700B` for GUI_TOG.
