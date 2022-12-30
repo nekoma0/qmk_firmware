@@ -13,7 +13,7 @@ Thanks to QMK discord server people too! awesome peeps like filterpaper#2878 , w
   - `XTD_FN` assigned keys LED is `CYAN`.
 - GUI/Option Lock toggle key combination is `FN+LGUI` in windows or `FN+LOPT` in mac.[^1] Can be relocated with VIA[^2]
 - GUI LED indicator would glow `GOLD` color when lock is enabled.
-- FN Layer `XTD_FN` F1~12 replaced with F13~f24
+- FN Layer `XTD_FN` F1-F12 replaced with F13-F24
 - FN Layer `WIN_FN` has mouse controls.(Windows)
   - `FN+UP` Mouse cursor up
   - `FN+DOWN` Mouse cursor down
