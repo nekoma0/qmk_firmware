@@ -132,13 +132,13 @@ bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
             function_capslock_indicator(led_min, led_max);
             break;
         case MAC_FN:
-            function_fnkey_indicator(led_min, led_max, current_layer, RGB_GREEN);
+            function_fnkey_indicator(led_min, led_max, current_layer, RGB_GREEN); // MAC_FN Layer indicator color can be change here.
             break;
         case WIN_FN:
-            function_fnkey_indicator(led_min, led_max, current_layer, RGB_GREEN);
+            function_fnkey_indicator(led_min, led_max, current_layer, RGB_GREEN); // WIN_FN Layer indicator color can be change here.
             break;
         case XTD_FN:
-            function_fnkey_indicator(led_min, led_max, current_layer, RGB_CYAN);
+            function_fnkey_indicator(led_min, led_max, current_layer, RGB_CYAN); //XTD_FN Layer indeicator color can be change here.
             break;
     }
     return false;
