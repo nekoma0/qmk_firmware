@@ -113,8 +113,7 @@ void function_fnkey_indicator(uint8_t led_min, uint8_t led_max, uint8_t current_
             uint8_t index = g_led_config.matrix_co[row][col];
             if (index >= led_min && index < led_max && index != NO_LED &&
             keymap_key_to_keycode(current_layer, (keypos_t){col,row}) > KC_TRNS) {
-                if (current_layer == XTD_FN){rgb_matrix_set_color(index, r, g, b);}
-                    else {rgb_matrix_set_color(index, r, g, b);}
+                rgb_matrix_set_color(index, r, g, b);
             }
         }
     }
@@ -122,7 +121,6 @@ void function_fnkey_indicator(uint8_t led_min, uint8_t led_max, uint8_t current_
 
 // rgb matrix advanced user
 bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
-    if (keymap_config.no_gui){rgb_matrix_set_color (GUI_INDICATOR_INDEX, GUI_INDICATOR_COLOR);}
     uint8_t current_layer = get_highest_layer(layer_state);
     switch (current_layer) {
         case MAC_BASE:
@@ -141,5 +139,6 @@ bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
             function_fnkey_indicator(led_min, led_max, current_layer, RGB_CYAN); //XTD_FN Layer indeicator color can be change here.
             break;
     }
+    if (keymap_config.no_gui){rgb_matrix_set_color (GUI_INDICATOR_INDEX, GUI_INDICATOR_COLOR);}
     return false;
 }
